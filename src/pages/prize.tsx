@@ -10,49 +10,55 @@ const Page: React.FC<PageProps> = (props) => {
     <Layout>
       <article>
         <h2 id="Prize" className="text-center">
-          {t("Prize")}
+          {t("Prize.headline")}
         </h2>
-        <div className="flex h-[50vh] flex-col">
-          <p dangerouslySetInnerHTML={{ __html: t("Prize Description") }}>
 
-          </p>
+        <div className="flex flex-col gap-4">
+          <p dangerouslySetInnerHTML={{ __html: t("Prize.description") }}></p>
+
           <div className="flex flex-row items-center justify-center pt-4">
             <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://medium.com/web3foundation/announcing-the-jam-implementers-prize-e79f8ebc506d"
             >
-              Read the announcement
+              {t("Prize.cta")}
             </a>
           </div>
 
-          <p>
-            The{" "}
-            <span className="jam">
-              <span>J</span>am
-            </span>{" "}
-            Implementer’s Prize encourages multiple client implementations to
-            boost network resilience. The Foundation seeks proposals for{" "}
-            <span className="jam">
-              <span>J</span>am
-            </span>{" "}
-            implementations in diverse programming languages, including OCaml,
-            Go, and Zig among others. The Foundation is excited to support
-            enthusiastic developers in shaping the future of blockchain
-            technology. Interested teams can apply for the{" "}
-            <span className="jam">
-              <span>J</span>am
-            </span>{" "}
-            Implementer’s Prize here:
-          </p>
-          <div className="flex flex-row items-center justify-center p-4">
-            <a
-              target="_blank"
-              href="https://jam.web3.foundation/"
-              rel="noopener noreferrer"
-            >
-              https://jam.web3.foundation/
-            </a>
+          <p dangerouslySetInnerHTML={{ __html: t("Prize.resources") }}></p>
+
+          <div className="flex w-full">
+            <div className="flex flex-col items-start gap-3 pl-5 sm:pl-10">
+              <a
+                target="_blank"
+                href="https://jam.web3.foundation/"
+                rel="noopener noreferrer"
+              >
+                jam.web3.foundation
+              </a>
+              <a
+                target="_blank"
+                href="https://jam.web3.foundation/rules"
+                rel="noopener noreferrer"
+              >
+                jam.web3.foundation/rules
+              </a>
+              <a
+                target="_blank"
+                href="https://hackmd.io/@polkadot/jamprize"
+                rel="noopener noreferrer"
+              >
+                Gav's Unofficial JAM Prize Notes
+              </a>
+              <a
+                target="_blank"
+                href="https://github.com/w3f/jam-milestone-delivery"
+                rel="noopener noreferrer"
+              >
+                Milestone Delivery
+              </a>
+            </div>
           </div>
         </div>
       </article>
@@ -67,10 +73,34 @@ export const Head: HeadFC<{}, { langKey?: string }> = (props) => {
   return (
     <>
       <CommonHead />
+
+      {/* Custom Twitter Meta Tags */}
+      <meta
+        id="twitter:url"
+        property="twitter:url"
+        content="https://graypaper.com/prize"
+      />
+      <meta id="twitter:title" name="twitter:title" content="JAM Prize" />
+      <meta
+        id="twitter:description"
+        name="twitter:description"
+        content="JAM Implementer’s Prize, a 10 Million DOT prize pool aimed at fostering diversity in the development of the JAM protocol."
+      />
+      <meta
+        id="twitter:creator"
+        name="twitter:creator"
+        content="@Web3foundation"
+      />
+      <meta id="twitter:site" name="twitter:site" content="@Web3foundation" />
+      <meta
+        id="twitter:image"
+        name="twitter:image"
+        content="https://graypaper.com/img/opengraph.png?v=15122024"
+      />
+
       <html id="html" lang={i18n.language} />
       <title id="title">{`JAM ${t("Prize")}`}</title>
 
-      <meta name="robots" content="noindex, nofollow" />
       <meta
         id="description"
         name="description"

@@ -38,9 +38,7 @@ const Page: React.FC<PageProps> = (props) => {
         <h3 className="text-xl" id="download">
           {t("Gray Paper")}
         </h3>
-        <p>
-          {t("Latest version")}: <code>DRAFT 0.3.5 August 18, 2024</code>
-        </p>
+        <p>{t("Latest version")}:</p>
         <p className="flex flex-col gap-3 pl-5 md:pl-10">
           <a href="/graypaper.pdf" download={true}>
             <code>graypaper.com/graypaper.pdf</code>
@@ -55,22 +53,23 @@ const Page: React.FC<PageProps> = (props) => {
             <code>github.com/gavofyork/graypaper</code>
           </a>
         </p>
-        <p>
-          {t('Resources.VersionNoBackground')}{" "}
+        {/* TODO Can be added back in once this process is automated as well */}
+        {/* <p>
+          {t("Resources.VersionNoBackground")}{" "}
           <a
             href="https://github.com/gavofyork/graypaper/releases"
             rel="noopener noreferrer"
           >
-          {t('Resources.MostRecent')}
+            {t("Resources.MostRecent")}
           </a>{" "}
-          {t('Resources.DecisiveVersion')}.
+          {t("Resources.DecisiveVersion")}.
         </p>
 
         <p className="flex flex-col gap-3 pl-5 md:pl-10">
           <a href="/graypaper_no_background.pdf" download={true}>
             <code>graypaper.com/graypaper_no_background.pdf</code>
           </a>
-        </p>
+        </p> */}
         <h3 className="text-xl" id="contribute">
           {t("Contribute")}
         </h3>
@@ -109,11 +108,24 @@ const Page: React.FC<PageProps> = (props) => {
         <iframe
           className="aspect-video h-auto w-full"
           src="https://www.youtube.com/embed/O3kRAVBTkfs?si=auiYGd6pQfrYV2D4"
-          title="YouTube video player"
-          frameborder="0"
+          title="Gavin Wood: The Gray Paper Interview - JAM & the Future of Polkadot - Behind the Code: Web3 Thinkers"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        />
+
+        <h3 className="text-xl" id="Documentary">
+          {t("Documentary")}
+        </h3>
+        <iframe
+          className="aspect-video h-auto w-full"
+          src="https://www.youtube.com/embed/JGeKdpYEZs4"
+          title="The Universal Machine - Gavin Wood & The JAM Gray Paper World Tour Documentary"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
         />
       </article>
     </Layout>

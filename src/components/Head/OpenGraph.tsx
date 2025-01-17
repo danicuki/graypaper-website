@@ -11,21 +11,37 @@ export const OpenGraph: React.FC = () => (
     />
     <meta
       property="og:image"
-      content="https://opengraph.b-cdn.net/production/documents/071b08d8-3cf5-4536-99df-913b960c7bf0.png?token=gtsIp0vjcn8ec0YNc-Lae6hNH5LNXunCRsq-Hco8edw&height=630&width=1200&expires=33248759780"
+      content="https://graypaper.com/img/opengraph.png"
     />
 
     {/* <!-- Twitter Meta Tags --> */}
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content="graypaper.com" />
-    <meta property="twitter:url" content="https://graypaper.com" />
-    <meta name="twitter:title" content="JAM Gray Paper" />
+    <meta id="twitter:card" name="twitter:card" content="summary_large_image" />
     <meta
+      id="twitter:domain"
+      property="twitter:domain"
+      content="graypaper.com"
+    />
+    <meta
+      id="twitter:url"
+      property="twitter:url"
+      content="https://graypaper.com"
+    />
+    <meta id="twitter:title" name="twitter:title" content="JAM Gray Paper" />
+    <meta
+      id="twitter:description"
       name="twitter:description"
       content="JOIN-ACCUMULATE MACHINE: A SEMI-COHERENT SCALABLE TRUSTLESS VM"
     />
     <meta
+      id="twitter:image"
       name="twitter:image"
-      content="https://opengraph.b-cdn.net/production/documents/071b08d8-3cf5-4536-99df-913b960c7bf0.png?token=gtsIp0vjcn8ec0YNc-Lae6hNH5LNXunCRsq-Hco8edw&height=630&width=1200&expires=33248759780"
+      content="https://graypaper.com/img/opengraph.png"
     />
+    <meta
+      id="twitter:creator"
+      name="twitter:creator"
+      content="@Web3foundation"
+    />
+    <meta id="twitter:site" name="twitter:site" content="@Web3foundation" />
   </>
 )

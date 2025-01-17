@@ -1,54 +1,15 @@
-type Language =
-  | "Java"
-  | "AspectJ"
-  | "Kotlin"
-  | "C#"
-  | "Go"
-  | "C"
-  | "C++"
-  | "C/C++"
-  | "D"
-  | "Rust"
-  | "Swift"
-  | "Zig"
-  | "Carbon"
-  | "Fortran"
-  | "Scheme"
-  | "Common Lisp"
-  | "Prolog"
-  | "Haskell"
-  | "ML"
-  | "Perl"
-  | "Python"
-  | "Ruby"
-  | "JavaScript"
-  | "TypeScript"
-  | "Groovy"
-  | "Dart"
-  | "Ada"
-  | "Julia"
-  | "Erlang"
-  | "Elixir"
-  | "OCaml"
-  | "Smalltalk"
-  | "F#"
-  | "Scala"
-  | "APL"
-  | "Brainfuck"
-  | "Whitespace"
-  | "Redstone"
-
-interface ClientData {
-  description: `${string}.` | `${string}!` | ""
-  homepage: `http${string}` | ""
-  name: string
-  lang: Language
-  lang_set: "A" | "B" | "C" | "D" | "Z"
-  milestone: 0 | 1 | 2 | 3 | 4 | 5
-  contact: string[]
-}
+import { ClientData } from "./types"
 
 export const clients: ClientData[] = [
+  {
+    description: "The first JAM team in Taiwan. Make JAM great again.",
+    homepage: "https://hackmd.io/8ckvpUULSp-HqThsxXE3jg?view",
+    name: "New JAMneration",
+    lang: "Go",
+    lang_set: "A",
+    milestone: 0,
+    contact: ["mo0307b1@gmail.com"],
+  },
   {
     description: "Parity experimental JAM client. Currently closed source.",
     homepage: "",
@@ -57,6 +18,25 @@ export const clients: ClientData[] = [
     lang_set: "B",
     milestone: 0,
     contact: [],
+  },
+  {
+    description: "JAM client implementation in Rust.",
+    homepage: "https://universaldot.foundation",
+    name: "UNIVERSALDOT",
+    lang: "Rust",
+    lang_set: "B",
+    milestone: 0,
+    contact: ["info@universaldot.foundation"],
+  },
+  {
+    name: "JamZig",
+    description:
+      "Implementation of the Jam client in the Zig programming language.",
+    homepage: "https://jamzig.dev",
+    lang: "Zig",
+    lang_set: "B",
+    milestone: 0,
+    contact: ["info@jamzig.dev", "#jamzig:matrix.org"],
   },
   {
     description:
@@ -153,13 +133,13 @@ export const clients: ClientData[] = [
   },
   {
     description:
-      "From Colorful Notion: Would love to connect our working QUIC implementation in Fall, organize a weeklong meetup at Devcon in Thailand.",
-    homepage: "https://dune.com/substrate/jam-duna",
+      "Colorful Notion's JAM. TestNet collaborations welcome.  Currently closed source.",
+    homepage: "https://github.com/jam-duna/jamtestnet",
     name: "JAM DUNA",
     lang: "Go",
     lang_set: "A",
     milestone: 0,
-    contact: ["https://t.me/colorfulnotion"],
+    contact: ["@sourabhniyogi:matrix.org"],
   },
   {
     description: "",
@@ -299,5 +279,73 @@ export const clients: ClientData[] = [
     lang_set: "A",
     milestone: 0,
     contact: ["https://x.com/nathanccxv"],
+  },
+  {
+    name: "JavaJAM",
+    description: "Java implementation of the JAM protocol.",
+    homepage: "https://javajam.io",
+    lang: "Java",
+    lang_set: "A",
+    milestone: 0,
+    contact: ["https://x.com/javajamio",
+              "info@javajam.io"],
+  },
+  {
+    description: "Rust implementation of JAM by Clawbird.",
+    homepage: "https://github.com/ltfschoen/jam",
+    name: "Clawbird",
+    lang: "Rust",
+    lang_set: "B",
+    milestone: 0,
+    contact: [
+      "@ltfschoen:matrix.org",
+      "https://x.com/ltfschoen",
+      "https://t.me/ltfschoen",
+    ],
+  },
+  {
+    description: "Go Implementation of JAM by rcarback.",
+    homepage: "https://gitlab.com/carback1/goberryjam",
+    name: "goberryjam",
+    lang: "Go",
+    lang_set: "A",
+    milestone: 0,
+    contact: [
+      "@rick:carback.us",
+      "https://x.com/rcarback",
+      "https://carback.us/rick/contact/",
+    ],
+  },
+  {
+    description: "Elixir implementation of JAM.",
+    homepage: "",
+    name: "Jelix",
+    lang: "Elixir",
+    lang_set: "D",
+    milestone: 0,
+    contact: [
+      "@amritj:matrix.org",
+      "amrit@blockdudes.com",
+      "https://t.me/amritkumarjain",
+    ],
+  },
+  {
+    description: "A Minimal JAM Protocol Implementation in Rust.",
+    homepage: "",
+    name: "SpaceJam",
+    lang: "Rust",
+    lang_set: "B",
+    milestone: 0,
+    contact: ["@clearloop:matrix.org"],
+  },
+  {
+    description:
+      "An impl with a focus on ease of understanding rather than performance.",
+    homepage: "",
+    name: "Gooseberry",
+    lang: "Rust",
+    lang_set: "B",
+    milestone: 0,
+    contact: ["gilescope@gmail.com"],
   },
 ]

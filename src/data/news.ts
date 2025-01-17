@@ -1,4 +1,56 @@
-export const news: Array<{ date: string; title: string; link: string }> = [
+import { News } from "./types"
+
+export const news: News[] = [
+  {
+    title:
+      "Space Monkeys 173—Absolute Resilience Polkadot Hub & JAM's Role in Securing Censor-free Web3",
+    date: "06/01/2025",
+    link: "https://www.youtube.com/watch?v=UV7zwbLRJHg",
+  },
+  {
+    title: "Initial Release of Parity Technologies' JAM Rust SDK",
+    date: "29/11/2024",
+    link: "https://hackmd.io/@polkadot/jamsdk",
+  },
+  {
+    title:
+      "When Shift Happens—Ethereum Founder Reveals Why ETH is Going NOWHERE (And How He Plans to Change That)",
+    date: "22/11/2024",
+    link: "https://youtu.be/npnbqnlQtoQ?si=p6zNqQtGOjO6Kxob&t=4979",
+  },
+  {
+    title:
+      "sub0 reset 2024—Demystifying JAM Understanding the Evolution of Polkadot towards JAM",
+    date: "13/11/2024",
+    link: "https://www.youtube.com/watch?v=eGLCedIT94U",
+  },
+  {
+    title: "sub0 reset 2024—How JAM Changes the Future of Web3",
+    date: "13/11/2024",
+    link: "https://www.youtube.com/watch?v=G9CNCNiXuJI",
+  },
+  {
+    title: "sub0 reset 2024—JAM with Gavin Wood",
+    date: "13/11/2024",
+    link: "https://www.youtube.com/watch?v=UxcmPC-yY0A",
+  },
+  {
+    title:
+      "The Universal Machine—Gavin Wood & The JAM Gray Paper World Tour Documentary",
+    date: "02/11/2024",
+    link: "https://youtu.be/JGeKdpYEZs4",
+  },
+  {
+    title: "A Glass with Gav—Episode 4: The Kurayoshi Pure Malt",
+    date: "12/09/2024",
+    link: "https://www.youtube.com/watch?v=mEhj1_KQ1rU",
+  },
+  {
+    title:
+      "Scytale Digital—$50 Million JAM Implementer’s Prize and Access a Supercomputer Playground",
+    date: "12/09/2024",
+    link: "https://www.scytale.digital/blog-posts/attention-developers-discover-the-50-million-jam-implementers-prize-and-access-a-supercomputer-playground",
+  },
   {
     title: "Crypto India—Polkadot JAM Upgrade AMA with Gavin Wood",
     date: "21/08/2024",
